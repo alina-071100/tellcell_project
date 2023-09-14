@@ -1,4 +1,5 @@
 import 'package:first_project/helpers/colors.dart';
+import 'package:first_project/pages/market_service.dart';
 import 'package:first_project/pages/transport_page.dart';
 import 'package:first_project/widgets/other_services.dart';
 import 'package:flutter/material.dart';
@@ -58,22 +59,31 @@ class _MyHomePageState extends State<MyHomePage> {
         unselectedItemColor: Colors.grey,
         elevation: 7,
         onTap: (int index) {
+          // Navigator.push(
+          //     // context,
+          //     // MaterialPageRoute(
+          //     // builder: (context) => MarketPage(),
+          //     // ),
+          //     );
           setState(() {
             currentTab = index;
           });
         },
         currentIndex: currentTab,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Գլխավոր'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(
               icon: Icon(Icons.shopping_bag_outlined), label: 'BON'),
-          BottomNavigationBarItem(icon: Icon(Icons.qr_code), label: 'QR կոդ'),
+          BottomNavigationBarItem(icon: Icon(Icons.qr_code), label: 'QR code'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.museum_sharp), label: 'Բանկինգ'),
+              icon: Icon(Icons.museum_sharp), label: 'Banking'),
         ],
       ),
     );
   }
+
+
+
 
   Widget body() {
     return getBody();
@@ -92,9 +102,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         );
       case 1:
-        return Container(
-          child: Text('BON!!!!!'),
-        );
+        return MyMarketApp();
+
       default:
         return Container();
     }

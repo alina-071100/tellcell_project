@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Wallet',
       theme: ThemeData(
-        primarySwatch:Colors.orange,
+        // primarySwatch:Colors.orange,
       ),
       home: const MyHomePage(),
     );

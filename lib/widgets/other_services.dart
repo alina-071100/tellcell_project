@@ -184,7 +184,7 @@ class OtherServices extends StatelessWidget {
           specialOffers(
               title: 'Նվեր՝ պիցցա',
               bgColor: Colors.amber.shade900,
-              imageURL: 'https://telcell.am/images/header_block/1/1687700329616.png',  onTap: () {}),
+              imageURL: '',  onTap: () {}),
           specialOffers(
               title: '20% բոնուս', bgColor: Colors.purple, imageURL: '',  onTap: () {}),
           specialOffers(
@@ -225,7 +225,7 @@ class OtherServices extends StatelessWidget {
                   fit: BoxFit.contain,
                 ),
               ),
-            Column(mainAxisAlignment: MainAxisAlignment.start, children: [
+            const Column(mainAxisAlignment: MainAxisAlignment.start, children: [
               // Text(title,
               //     style: const TextStyle(
               //         fontSize: 16,
@@ -234,17 +234,17 @@ class OtherServices extends StatelessWidget {
             ]
             ),
            Image.network(imageURL,
-           
                   fit: BoxFit.cover, 
                 ),
                  Positioned(
                 top: 20,
                 left: 10,
                 child: Text(title,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 16, 
                     fontWeight: FontWeight.bold, 
+                    
                   ),
                 )
                  )
