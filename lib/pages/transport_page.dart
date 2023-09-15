@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class TransportPage extends StatefulWidget {
   const TransportPage({super.key});
@@ -14,9 +12,9 @@ class _TransportPageState extends State<TransportPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Տրանսպորտ'),
+        title: const Text('Տրանսպորտ'),
       ),
-      body: Placeholder(),
+      body: const Placeholder(),
     );
   }
 }
