@@ -62,29 +62,6 @@ class _MainTabState extends State<MainTab> {
     );
   }
 
-  // Widget body() {
-  //   return getBody();
-  // }
-
-  // Widget getBody() {
-  //   switch (currentTab) {
-  //     case 0:
-  //       return SingleChildScrollView(
-  //         child: Column(
-  //           children: [
-  //             balance(),
-  //             statement(),
-  //             OtherServices(),
-  //           ],
-  //         ),
-  //       );
-  //     case 1:
-  //     // return BonePage();
-
-  //     default:
-  //       return Container();
-  //   }
-  // }
 
   Widget balance() {
     return Padding(

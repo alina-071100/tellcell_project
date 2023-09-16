@@ -32,26 +32,82 @@ class _BonTabState extends State<BonTab> {
         bottom: filters([
           {
             'icon': Icons.maps_home_work_outlined,
-            'label': 'Մարկեթ',
+            'label': 'Market',
           },
           {
-            'icon': Icons.access_time_filled_rounded,
-            'label': 'Մարկեթ',
+            'icon': Icons.interests_outlined,
+            'label': 'My products',
           },
           {
-            'icon': Icons.wrong_location_rounded,
-            'label': 'Մարկեթ',
+            'icon': Icons.sentiment_very_satisfied_rounded,
+            'label': 'Invite friends',
           },
           {
-            'icon': Icons.water_damage_rounded,
-            'label': 'Մարկեթ',
+            'icon': Icons.handshake_outlined,
+            'label': 'Bon partners',
+          },
+           {
+            'icon': Icons.local_activity_outlined,
+            'label': 'Events',
+          },
+           {
+            'icon': Icons.wallet_giftcard,
+            'label': 'Present a BON',
+          },
+           {
+            'icon': Icons.star_border,
+            'label': 'Mining',
+          },
+           {
+            'icon': Icons.send,
+            'label': 'BONs Request',
+          },
+           {
+            'icon': Icons.show_chart_rounded,
+            'label': 'Miners',
+          }, {
+            'icon': Icons.history,
+            'label': 'History',
           },
         ]),
+      //   actions: [
+      //     IconButton(
+      //       onPressed: () {},
+      //       icon: const Icon(Icons.notifications_outlined),
+      //       color: Colors.black,
+      //       alignment: Alignment.centerRight,
+      //     ),
+      // ],
       ),
-      body: body(),
+      
+      body: body(
+        
+      ),
     );
+    
   }
 
+
+// Widget textBON() {
+//   return SingleChildScrollView(
+//       scrollDirection: Axis.vertical,
+//       child: Column(
+//         children: [
+//           Container(
+//             padding: const EdgeInsets.symmetric(horizontal: 15),
+//             child: const Row(
+//                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                 children: [
+//                   Text('top product',
+//                       style: TextStyle(color: Colors.black, fontSize: 20)),
+//                   Text('view all'),
+//                 ],
+//                 ),
+//           ),
+//       ],
+//       ),
+//   );  
+// }
   Widget appBarTitle() {
     return Column(
       children: [
@@ -77,7 +133,7 @@ class _BonTabState extends State<BonTab> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              'Մինչեւ 30 սեպ 2023',
+              'Until 30 sep 2023',
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w500,
@@ -96,7 +152,73 @@ class _BonTabState extends State<BonTab> {
   }
 
   Widget body() {
-    return itemList();
+    return itemList([
+          {
+            'image': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzLuhWWghvObEl898y_VoDs1tLC2jnmVHvZZITT6bfq5n-kpmVgareCROhz2QSqtLereU&usqp=CAU7',
+            'text': '01 sep - 30 sep',
+            'description1': 'Թարմացնող սուրճ Coffee House-ից',
+            'description2': 'Coffee House',
+            'description3': 'Փոխանակեք Ձեր BON-երը մեկ բաժակ սուրճի հետ',
+            'limitation': '3',
+          },
+           {
+            'image': 'https://media-cdn.tripadvisor.com/media/photo-s/1c/a0/9f/72/natural-cappuccino.jpg',
+            'text': '01 sep - 30 sep',
+            'description1': 'Երկու սուրճ Coffee House-ից',
+            'description2': 'Coffee House',
+            'description3': 'Փոխանակեք Ձեր BON-երը երկու բաժակ սուրճի հետ',
+            'limitation': '3',
+          },
+          {
+            'image': 'https://www.coffeehouse.am/storage/files/cosmo-188x_.png?token=22d098093c46a151f0fa82bebc96d768',
+            'text': '01 sep - 30 sep',
+            'description1': 'Սմուզի Coffee House-ից',
+            'description2': 'Coffee House',
+            'description3': 'Փոխանակեք Ձեր BON-երը սմուզիի համերից որևէ մեկի հետ',
+            'limitation': '3',
+          },
+          {
+            'image': 'https://www.sas.am/upload/Sh/imageCache/391/299/299512945196845.jpg',
+            'text': '01 sep - 30 sep',
+            'description1': 'Երկու կտոր Արուսիկ տիրամիսու առաքումով Երևանում',
+            'description2': 'Արուսիկ տիրամիսու',
+            'description3': 'Փոխանակեք Ձեր BON-երը երկու կտոր տիրամիսուի հետ',
+            'limitation': '1',
+          },
+          {
+            'image': 'https://static.parma.am/origin/product/1024/00842.jpg',
+            'text': '01 sep - 30 sep',
+            'description1': 'Երեք կտոր Արուսիկ տիրամիսու առաքումով Երևանում',
+            'description2': 'Արուսիկ տիրամիսու',
+            'description3': 'Փոխանակեք Ձեր BON-երը երեք կտոր տիրամիսուի հետ',
+            'limitation': '1',
+          },
+          {
+            'image': 'https://www.sas.am/upload/Sh/imageCache/304/901/9010024167539508.jpg',
+            'text': '13 sep - 30 sep',
+            'description1': 'Արուսիկ տիրամիսու(մեծ) առաքումով Երևանում',
+            'description2': 'Արուսիկ տիրամիսու',
+            'description3': 'Փոխանակեք Ձեր BON-երը Արուսիկ տիրամիսուի հետ ամբողջ ընտանիքի համար',
+            'limitation': '1',
+          },
+          {
+            'image': 'https://i.ebayimg.com/images/g/EaEAAOSwDPFjsaRr/s-l1200.webp',
+            'text': '01 sep - 30 sep',
+            'description1': 'Պոնչիկներ Ռինգոյից',
+            'description2': 'Ringo Ponchik & Perazhki',
+            'description3': 'Փոխանակեք Ձեր BON-երը 3 պոնչիկից բաղկացած սեթի հետ',
+            'limitation': '5',
+          },
+          {
+            'image': 'https://i.ebayimg.com/images/g/EaEAAOSwDPFjsaRr/s-l1200.webp',
+            'text': '01 sep - 30 sep',
+            'description1': 'Խաչապուրիների սեթ',
+            'description2': 'Gurmania.am WEB',
+            'description3': 'Փոխանակեք Ձեր BON-երը թարմ խաչապուրիների սեթի(6 հատ) հետ',
+            'limitation': '1',
+          },
+    ],
+          );
   }
 
   PreferredSizeWidget filters(List<Map<String, dynamic>> data) {
@@ -119,41 +241,36 @@ class _BonTabState extends State<BonTab> {
               ),
               onPressed: () {},
               icon: Icon(
-                data[0]['icon'],
+                data[index]['icon'],
                 color: AppColors.appOrange,
               ),
               label: Text(
-                data[0]['label'],
+                data[index]['label'],
                 style: TextStyle(color: AppColors.appBlack),
               ),
+              
             );
           },
           separatorBuilder: (context, index) {
             return const SizedBox(
-              width: 10,
+              width: 20,
             );
+            
           },
         ),
+        
       ),
+      
     );
   }
 
-  Widget itemList() {
+
+
+   Widget itemList(List<Map<String, dynamic>> dataItems){
     return ListView.separated(
         padding: const EdgeInsets.all(10),
         itemBuilder: (context, index) {
-          return itemTile();
-        },
-        separatorBuilder: (context, index) {
-          return const SizedBox(
-            height: 10,
-          );
-        },
-        itemCount: 20);
-  }
-
-  Widget itemTile() {
-    return Card(
+          return Card(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15),
       ),
@@ -170,12 +287,12 @@ class _BonTabState extends State<BonTab> {
                   Expanded(
                     flex: 2,
                     child: Image.network(
-                      'https://i.ebayimg.com/images/g/EaEAAOSwDPFjsaRr/s-l1200.webp',
+                     dataItems[index]['image'] ,
                     ),
                   ),
                   Expanded(
                     child: Text(
-                      '01 սեպ - 30 սեպ',
+                     dataItems[index]['text'] ,
                       style: TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.w500,
@@ -187,14 +304,15 @@ class _BonTabState extends State<BonTab> {
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(5),
-                        color: const Color.fromARGB(255, 229, 215, 215)),
+                        color: Colors.blueGrey.shade100),
                     height: 25,
                     width: 25,
                     child: Text(
-                      '3',
+                      dataItems[index]['limitation'],
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: AppColors.appOrange,
+                        fontWeight: FontWeight.bold,
                         fontSize: 15,
                       ),
                     ),
@@ -205,13 +323,13 @@ class _BonTabState extends State<BonTab> {
           ),
           Expanded(
             flex: 5,
-            child: SizedBox(
+            child: Container(
               height: 200,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Թարմացնող Սուրչ, coffee Թարմացնող Սուրչ, coffee',
+                    dataItems[index]['description1'],
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
@@ -221,7 +339,7 @@ class _BonTabState extends State<BonTab> {
                     ),
                   ),
                   Text(
-                    'Coffee House',
+                     dataItems[index]['description2'],
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
@@ -231,7 +349,7 @@ class _BonTabState extends State<BonTab> {
                     ),
                   ),
                   Text(
-                    'Թարմացնող Սուրչ, coffee Սուրչ, coffee, Սուրչ, coffee Թարմացնող Սուրչ, coffee',
+                     dataItems[index]['description3'],
                     style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.w500,
@@ -255,5 +373,16 @@ class _BonTabState extends State<BonTab> {
         ],
       ),
     );
+
+        },
+        separatorBuilder: (context, index) {
+          return const SizedBox(
+            height: 10,
+          );
+        },
+        itemCount: 8);
   }
+
+
+
 }
