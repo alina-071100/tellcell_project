@@ -1,6 +1,8 @@
 import 'package:first_project/helpers/colors.dart';
+import 'package:first_project/pages/banking_tab.dart';
 import 'package:first_project/pages/bon_tab.dart';
 import 'package:first_project/pages/main_tab.dart';
+import 'package:first_project/pages/qr_code_tab.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -43,20 +45,20 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-
-
-
   Widget body() {
     return getBody();
   }
- Widget getBody() {
+
+  Widget getBody() {
     switch (currentTab) {
       case 0:
         return const MainTab();
       case 1:
         return const BonTab();
-        // case 2:
-        // return QRPage();
+      case 2:
+        return const QRCodeTab();
+      case 3:
+        return const BankingTab();
       default:
         return Container();
     }

@@ -323,7 +323,7 @@ class _BonTabState extends State<BonTab> {
           ),
           Expanded(
             flex: 5,
-            child: Container(
+            child: SizedBox(
               height: 200,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -382,7 +382,5 @@ class _BonTabState extends State<BonTab> {
         },
         itemCount: 8);
   }
-
-
 
 }
