@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   mobile_scanner: ^3.4.1
   qr_flutter: ^4.1.0
-   flutter_multi_formatter: ^2.11.11
+  flutter_multi_formatter: ^2.11.16
   local_auth: ^2.1.7
 
 

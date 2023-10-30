@@ -47,7 +47,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   keyboardType: TextInputType.phone,
                   inputFormatters: [
-                    MaskedInputFormatter('+000 (00) 000 000'),
+                    // MaskedInputFormatter('+000 (00) 000 000'),
                   ],
                   controller: phoneController,
                   
